@@ -192,42 +192,7 @@ Seasonal trends show spikes in views surrounding Football Manager game release d
 * Moderate positive correlation between view count and like count (0.67).
 * Weak correlation between view count and comment count, suggesting comments are less predictive of overall video engagement.
 
-
-# Analysis Process
-## Key Findings
-
-
-# Visualizations
-
-Might not need this section. Could use if we leveraged Tableau.
-
-# Next Steps
-
-## For Content Creators
-
-* Focus on High-Performing Categories: Challenges and Experiments consistently attract high viewership. Consider creating content in these areas while leveraging secondary categories like Player Development and Guides.
-* Leverage Gameplay Features: Content showcasing new gameplay features or updates tends to perform well, especially around new game releases.
-
-## For Businesses and Marketers
-
-* Collaborate with Creators in Key Categories: Partner with creators in high-performing categories to maximize reach and engagement.
-* Target Campaigns Around Game Releases: Use spikes in viewership during release periods to launch marketing campaigns or product promotions.
-
-
-### Racial Percentages in Census Tracts
-
-|Census Tract|Total Population|	White |	Black |	American Indian and Alaskan|Asian|Pacific Islander or Hawaiian|Two Or More Races|	Other| Sensors|
-|------------|----------------|-------|-------|-----------------------|-----|-----|-----|-----|----|
-|4001|3115.00|68.12|4.11|	0.00	|19.23|	0.00|	5.36|	3.18|	14|
-m
-**Table:** Average Racial Percentages for Tracts with Highest Sensor Count
-
-
-### 2020 Sensor Installation Spike
-![PurpleAir Sensors Installed in Oakland and Piedmont](./images/Barplot_of_PurpleAir_Sensor_Installs_in_Oakland.png)
-**Plot**: Number of Sensors Installed per Year
-
-
+## Insights Deep Dive
 
 # Repository Structure
 * `data/`: Contains raw YouTube video data.
