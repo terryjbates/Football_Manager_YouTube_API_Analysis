@@ -10,6 +10,7 @@ Analysis of Football Manager (FM) YouTube content to understand trends, high-per
 * [Data Overview](#data-overview) 
 * [Analytical Techniques](#analytical-techniques)
 * [Tools and Technologies](#tools-and-technologies)
+* [Methodology](#methodology)
 * [Analysis Process](#analysis-process)
 * [Insights and Findings](#insights-and-findings)
 * [Next Steps](#next-steps)
@@ -18,26 +19,32 @@ Analysis of Football Manager (FM) YouTube content to understand trends, high-per
 
 # Project Summary
 
-This project analyzes Football Manager-related YouTube content, identifying key content categories, patterns in viewership trends, and correlations between video performance and metadata. The analysis provides insights for content creators and businesses targeting the Football Manager audience, showcasing the dynamics of high-performing content and its evolution over time.
+
+This project analyzes Football Manager-related YouTube content, identifying key content categories, patterns in viewership trends, and correlations between video performance and metadata. The analysis leverages the [YouTube Data API](https://developers.google.com/youtube/v3/docs/search/list) to provide insights for content creators and businesses targeting the Football Manager audience, showcasing the dynamics of high-performing content and its evolution over time.
 
 # Background
 
 ## The Football Manager Ecosystem
-Football Manager (FM) is a popular football management simulation game with a strong and engaged global community. Content creators on platforms like YouTube play a significant role in promoting the game, sharing gameplay strategies, experiments, challenges, and tutorials that appeal to both casual players and die-hard fans. FM content ranges from rebuilds of historic football clubs to Wonderkid scouting guides and extreme gameplay experiments, all of which contribute to the game's vibrant ecosystem.
+[Football Manager](https://en.wikipedia.org/wiki/Football_Manager) (FM) is a highly immersive football management simulation game that puts players in control of every aspect of their team, from tactical decisions to financial management. Available on all major gaming platforms, FM has cultivated a passionate global community, with over **7 million players** engaging with the latest release, Football Manager 2024. Central to this ecosystem are content creators on platforms like [YouTube](https://www.youtube.com/) and [Twitch](https://www.twitch.tv/), who not only entertain but also provide critical gameplay strategies, detailed tutorials, and creative challenges. By analyzing these creators and their content, this project uncovers actionable insights for growing and sustaining engagement in this dynamic ecosystem.
 
 ## The YouTube Platform for Football Manager Content 
-YouTube has become a centralized hub for FM content, with creators building loyal fan bases through various types of videos, covering genres of gameplay, tutorials, and community collaborations with other content creators. Identifying trends and patterns in video performance is essential for understanding what drives engagement in this niche, and how its viewer base has expanded and shifted over time.
+[YouTube](https://www.youtube.com) serves not only as a hub for [Football Manager](https://en.wikipedia.org/wiki/Football_Manager) content, but also as a powerful marketing tool and search engine. For content creators, it offers a unique opportunity to engage with highly targeted audiences, build loyal communities, and generate sustainable revenue through ad monetization. Along with ad monetization, creators can leverage the YouTube platform to promote their brands on alternative platforms, such as [Patreon](https://www.patreon.com/) and [Twitch](https://www.twitch.tv/), directly sell their own merchandise, or earn brand sponsorship as well. 
 
+YouTube’s algorithm, designed to surface relevant content to users based on viewing habits, makes it easier for creators to break into niches like Football Manager. Unlike traditional [SEO](https://en.wikipedia.org/wiki/Search_engine_optimization) strategies that rely heavily on written content and webpage optimization, YouTube offers the advantage of video durability—content created years ago can continue to generate views and engagement, long after initial publication.
+
+This dynamic creates a highly competitive, yet accessible, space for creators of all sizes. Viewers use YouTube as a de facto search engine to find tutorials, gameplay strategies, and community-driven content. As a result, creators who understand how to optimize their video content can potentially gain significant visibility and reach. Furthermore, businesses targeting the Football Manager community can leverage YouTube’s ad platform to connect with a dedicated and engaged audience, fostering brand loyalty through authentic, creator-led partnerships.
+
+For both creators and marketers, the insights from this project offer actionable strategies to capitalize on YouTube’s unique ecosystem. By identifying high-performing video categories and engagement patterns, this analysis provides a roadmap for content optimization and audience growth, ultimately reinforcing [YouTube](https://www.youtube.com)’s role as a cornerstone of the Football Manager content landscape.
 
 # Data Overview
 
 Primary data sources:
 
-* The [YouTube Data API](https://developers.google.com/youtube/v3/docs/search/list) was used to extract video metadata, performance metrics, and channel information. By leveraging the API, we collected data on thousands of Football Manager-related videos. 
+* The [YouTube Data API](https://developers.google.com/youtube/v3/docs/search/list) provided metadata, performance metrics, and channel details for hundreds of creators and thousands of FM-related videos. 
 
-* API-extracted data was processed and stored locally [DuckDB](https://duckdb.org/) database tables to allow for efficient querying and data manipulation throughout the project.
+* Data was processed and stored in [DuckDB](https://duckdb.org/) for efficient querying and manipulation.
 
-* Extracts of dataframe information were exported to CSV and Pivot Tables in [Microsoft Excel](https://microsoft.com/en-us/microsoft-365/excel) were used to categorize video data into genres, as well as the use of area charts to track trends and content creator footprint.
+* Key metrics were exported to CSV and analyzed in  [Microsoft Excel](https://microsoft.com/en-us/microsoft-365/excel) using Pivot Tables and area charts to categorize content and track trends.
 
 # Analytical Techniques
 
@@ -216,6 +223,20 @@ The goal of this project was to analyze Football Manager (FM) YouTube content, i
         - **Monday** and **Thursday** are the most popular days for viewers to comment on content.
   - **Popular Content and Creators**
     - **Views**
+      - **Top 10 Most Viewed Videos**
+
+        | channelTitle   |        viewCount | url                                         |   year |
+        |:---------------|-----------------:|:--------------------------------------------|-------:|
+        | TomFM          |      1393911 | https://www.youtube.com/watch?v=CtIN34WbVJ0 |   2024 |
+        | DoctorBenjy FM | 923621           | https://www.youtube.com/watch?v=_rWxg3CEHcY |   2015 |
+        | TomFM          | 817896           | https://www.youtube.com/watch?v=9ialQPtqTnc |   2023 |
+        | TomFM          | 656077           | https://www.youtube.com/watch?v=W2oF7EINGjE |   2023 |
+        | Omega Luke     | 598924           | https://www.youtube.com/watch?v=pPKvlyaeHYc |   2023 |
+        | Zealand        | 591198           | https://www.youtube.com/watch?v=16MSX9-0VyY |   2024 |
+        | Zealand        | 535323           | https://www.youtube.com/watch?v=e_HSqKXz2HY |   2023 |
+        | Zealand        | 525820           | https://www.youtube.com/watch?v=MXDMoNOZu-I |   2022 |
+        | Zealand        | 521730           | https://www.youtube.com/watch?v=Psf-WyPNlSA |   2021 |
+        | Omega Luke     | 521595           | https://www.youtube.com/watch?v=IIN3FHShc44 |   2023 |
       ![Top 50 Viewed Videos Creator Categorized](./images/top_50_videos_creator_categorized.png)
       - [Zealand](https://www.youtube.com/@ZealandonYT) created **50%** of all top 50 videos ranked by _views_, with [TomFM](https://www.youtube.com/@TomFM) and [Omega Luke](https://www.youtube.com/@OmegaLukeGaming) rounding out the top three.
       - **Video Categories**
@@ -301,30 +322,30 @@ The goal of this project was to analyze Football Manager (FM) YouTube content, i
         | docks          |     162.812 | https://www.youtube.com/watch?v=vqA4Isi8tt4 | 2014-02-22 02:00:00-08:00 |
         | Ataberk Doğan  |     162.709 | https://www.youtube.com/watch?v=1mDCqJDArEY | 2022-08-12 07:00:01-07:00 |
         | docks          |     161.392 | https://www.youtube.com/watch?v=1idmHQSajvQ | 2014-03-09 04:00:00-07:00 |
-    - **CommentRatio** 
+      - **CommentRatio** 
 
-        | channelTitle   |   CommentRatio | url                                         | publishedAt               |
-        |:---------------|---------------:|:--------------------------------------------|:--------------------------|
-        | Kırmızı Kep    |       137.11   | https://www.youtube.com/watch?v=-IDzMmG-0fw | 2020-04-26 09:51:05-07:00 |
-        | WorkTheSpace   |       132.653  | https://www.youtube.com/watch?v=QdauHlWeb_E | 2013-09-12 04:20:07-07:00 |
-        | TomFM          |       117.117  | https://www.youtube.com/watch?v=Xx-ijzyInvI | 2017-12-23 10:00:03-08:00 |
-        | Kırmızı Kep    |       107.567  | https://www.youtube.com/watch?v=W13gZVEAA4U | 2015-07-21 01:23:33-07:00 |
-        | Kırmızı Kep    |        83.6013 | https://www.youtube.com/watch?v=GBz9j20YH1A | 2015-01-30 06:09:39-08:00 |
-        | Kırmızı Kep    |        80.3882 | https://www.youtube.com/watch?v=9srmD7JdDGs | 2020-04-28 10:05:06-07:00 |
-        | FM Scout       |        74.5856 | https://www.youtube.com/watch?v=YtzdRihl-84 | 2015-12-17 11:08:44-08:00 |
-        | Omega Luke     |        73.1132 | https://www.youtube.com/watch?v=h604OlgwLlg | 2020-07-27 04:00:13-07:00 |
-        | docks          |        70.5834 | https://www.youtube.com/watch?v=YmKRvrOJjWI | 2013-12-09 08:00:01-08:00 |
-        | docks          |        69.0205 | https://www.youtube.com/watch?v=Tej7awsFsO8 | 2013-06-25 07:30:45-07:00 |
-        | Steini         |        61.6045 | https://www.youtube.com/watch?v=soMphEZ7hAg | 2021-02-11 07:00:14-08:00 |
-        | DoctorBenjy FM |        60.6061 | https://www.youtube.com/watch?v=lE8W52FsqLo | 2014-10-20 05:41:42-07:00 |
-        | WorkTheSpace   |        59.5472 | https://www.youtube.com/watch?v=iA5kYOOxJww | 2015-04-15 07:17:30-07:00 |
-        | TomFM          |        59.0631 | https://www.youtube.com/watch?v=t3AcrP6_G5w | 2018-04-08 06:00:10-07:00 |
-        | TomFM          |        58.8235 | https://www.youtube.com/watch?v=1z3KXrKI4yc | 2017-01-20 08:00:00-08:00 |
-        | docks          |        56.2064 | https://www.youtube.com/watch?v=hB3_-33tHMU | 2013-07-19 07:30:11-07:00 |
-        | Kırmızı Kep    |        54.7132 | https://www.youtube.com/watch?v=61sQrSDeo7s | 2015-01-27 04:02:44-08:00 |
-        | DoctorBenjy FM |        54.2768 | https://www.youtube.com/watch?v=Eq7Spn0sXnc | 2017-11-17 09:00:02-08:00 |
-        | Omega Luke     |        53.1915 | https://www.youtube.com/watch?v=ccdiGpfdH2Q | 2020-07-05 04:00:18-07:00 |
-        | Kırmızı Kep    |        52.8207 | https://www.youtube.com/watch?v=hlxPGJwHGfw | 2015-02-18 07:52:07-08:00 |
+          | channelTitle   |   CommentRatio | url                                         | publishedAt               |
+          |:---------------|---------------:|:--------------------------------------------|:--------------------------|
+          | Kırmızı Kep    |       137.11   | https://www.youtube.com/watch?v=-IDzMmG-0fw | 2020-04-26 09:51:05-07:00 |
+          | WorkTheSpace   |       132.653  | https://www.youtube.com/watch?v=QdauHlWeb_E | 2013-09-12 04:20:07-07:00 |
+          | TomFM          |       117.117  | https://www.youtube.com/watch?v=Xx-ijzyInvI | 2017-12-23 10:00:03-08:00 |
+          | Kırmızı Kep    |       107.567  | https://www.youtube.com/watch?v=W13gZVEAA4U | 2015-07-21 01:23:33-07:00 |
+          | Kırmızı Kep    |        83.6013 | https://www.youtube.com/watch?v=GBz9j20YH1A | 2015-01-30 06:09:39-08:00 |
+          | Kırmızı Kep    |        80.3882 | https://www.youtube.com/watch?v=9srmD7JdDGs | 2020-04-28 10:05:06-07:00 |
+          | FM Scout       |        74.5856 | https://www.youtube.com/watch?v=YtzdRihl-84 | 2015-12-17 11:08:44-08:00 |
+          | Omega Luke     |        73.1132 | https://www.youtube.com/watch?v=h604OlgwLlg | 2020-07-27 04:00:13-07:00 |
+          | docks          |        70.5834 | https://www.youtube.com/watch?v=YmKRvrOJjWI | 2013-12-09 08:00:01-08:00 |
+          | docks          |        69.0205 | https://www.youtube.com/watch?v=Tej7awsFsO8 | 2013-06-25 07:30:45-07:00 |
+          | Steini         |        61.6045 | https://www.youtube.com/watch?v=soMphEZ7hAg | 2021-02-11 07:00:14-08:00 |
+          | DoctorBenjy FM |        60.6061 | https://www.youtube.com/watch?v=lE8W52FsqLo | 2014-10-20 05:41:42-07:00 |
+          | WorkTheSpace   |        59.5472 | https://www.youtube.com/watch?v=iA5kYOOxJww | 2015-04-15 07:17:30-07:00 |
+          | TomFM          |        59.0631 | https://www.youtube.com/watch?v=t3AcrP6_G5w | 2018-04-08 06:00:10-07:00 |
+          | TomFM          |        58.8235 | https://www.youtube.com/watch?v=1z3KXrKI4yc | 2017-01-20 08:00:00-08:00 |
+          | docks          |        56.2064 | https://www.youtube.com/watch?v=hB3_-33tHMU | 2013-07-19 07:30:11-07:00 |
+          | Kırmızı Kep    |        54.7132 | https://www.youtube.com/watch?v=61sQrSDeo7s | 2015-01-27 04:02:44-08:00 |
+          | DoctorBenjy FM |        54.2768 | https://www.youtube.com/watch?v=Eq7Spn0sXnc | 2017-11-17 09:00:02-08:00 |
+          | Omega Luke     |        53.1915 | https://www.youtube.com/watch?v=ccdiGpfdH2Q | 2020-07-05 04:00:18-07:00 |
+          | Kırmızı Kep    |        52.8207 | https://www.youtube.com/watch?v=hlxPGJwHGfw | 2015-02-18 07:52:07-08:00 |
 
 ---
 ## 7. Next Steps
