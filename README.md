@@ -223,9 +223,9 @@ The goal of this project was to analyze Football Manager (FM) YouTube content, i
 
 - **Engagement Patterns**
   - **Likes**
-    - A strong correlation exists between _likes_ and _views_, with a correlation coefficient of **0.82**. _Likes_ are a strong proxy measurement for _views_ as content consumers would likely need to view a video before determining it worthy of a _like_.
+    - _Likes_ strongly correlate with views (r=**0.82**), indicating viewers generally like content they’ve watched.
     ![Likes vs. Views](./images/likes_vs_views.png)
-    - A modest correlation exists between _likes_ and _comments_, with a correlation coefficient of **0.67**. Commenters on a video would also need to view the video before investing effort to comment on a video
+    - modest correlation between _likes_ and _comments_ (r=**0.67**). Commenters on a video would also need to view the video before investing effort to comment on a video
 
     ![Comments vs. Likes](./images/comments_vs_likes.png)
   - **Views**
@@ -251,7 +251,7 @@ The goal of this project was to analyze Football Manager (FM) YouTube content, i
       * Competition from emerging content and streaming platforms 
     ![Percent Change Decrease](./images/percent_change_downward.png)
   - **Seasonality**
-    - **October** is the month usually associated with monthly maximum _views_. **November** is month usually associated with monthly maximum _comments_. **November** is the common release date for new version of Football Manager. For _comments_, this time of the year may provide time for viewers to engage content, discuss their newly acquired game purchases, and share their playing experiences.
+    - **October** sees peak views, while **November** leads in comments, aligning with Football Manager release cycles and increased viewer engagement post-release..
     - **Days of the Week**
       - All dates, days, and times are in [UTC](https://en.wikipedia.org/wiki/Coordinated_Universal_Time). 
         - **Thursday** and **Wednesday** are the most popular days for content creators to publish content.
@@ -294,12 +294,12 @@ The goal of this project was to analyze Football Manager (FM) YouTube content, i
         - From **2022** to **2024** the "Challenges" category emerges, with their peak in 2023. "Challenges" imply a lack of novelty or dearth of interesting gameplay features.
         - "Community Collaborations" are only present in two years of our dataset. This niche may have untapped potential for content creation.
       - **Wordcloud Summary from Top Viewed Videos**
-        - We generated [wordclouds](https://en.wikipedia.org/wiki/Tag_cloud) to measure the frequency and use of terms in the "description" field for top ranked videos by _views_. An example using [DoctorBenjy FM](https://www.youtube.com/c/DoctorBenjyFM):
+        - [Wordclouds](https://en.wikipedia.org/wiki/Tag_cloud) highlight frequent terms in video descriptions. Ex: [DoctorBenjy FM](https://www.youtube.com/c/DoctorBenjyFM):
         ![DoctorBenjy FM Wordcloud](./images/wordcloud_DoctorBenjy_FM.png)
         - **Cursory Channel Brand Summaries**
           - **DoctorBenjy FM**: Targets experienced FM players seeking extreme gameplay experiments.
           - **Domingo Replay**: Variety streamer persona.
-          - **FM Scout**: Community site with assets, resources, and guides to finding Wonderkids
+          - **FM Scout**: Community site with assets, resources, and guides to finding Wonderkids.
           - **lollujo**: Daily content creator, but the 30 year simulation experiments contrasts with usual content.
           - **Omega Luke**: Focuses on challenges and rebuilds. 
           - **TomFM**: All-rounder, with even content distribution, less so for “Player Development” genre.
@@ -385,10 +385,32 @@ The goal of this project was to analyze Football Manager (FM) YouTube content, i
 
 ---
 ## 7. Next Steps
+
+To further expand on the insights gained from this project and explore untapped areas of analysis, the following next steps are proposed:
+
+#### Machine Learning Classification
+This analysis relied on domain-specific knowledge, direct knowledge of individual content creator brand's and information, and personal judgement. An interesting exercise would be training a supervised machine learning model to programmatically assess if a YouTube video was a "Football Manager" video or not. Features would include title, description text, tags, even assessing the thumbnail imagery, and classify if a video is a "Football Manager" video or not. This would alleviate manual asessment and decrease the toil in data acquisition process.
+
+Clustering analysis techniques run against data for various Football Manager-related channels may uncover similar video content based on quantitative data instead of qualitative judgments made by analysts. Once similar videos are isolated, based upon categorization by content creator, it may be possible to discover overlapping sets of content types and user bases.  
+
+#### Sentiment Analysis of Video Comments
+Analyze the sentiment behind viewer comments to uncover responses and their correlation with specific video categories or creators. Assess if particular percentages of positive or negative sentiment in video comments are correlated with video engagment, result in increased sponsored product sales, or result in channel "conversion" (new subscriber). 
+
+#### Tie In Cross-Platform Audience Behavior
+Compare YouTube engagement metrics with other platforms like Twitch or TikTok to understand cross-platform audience overlaps and preferences. Explore if similar patterns of growth, content type, and seasonality, mirror or diverge as compared to the YouTube platform.
+
+#### Measure Viewer Retention and Drop-Off Points
+Viewer "churn" can _only_ be assessed by individual content creators, as that data is not made public in the YouTube Data API. If internal classification o content was possible, creators could investigate viewer retention rates across video categories, identify where an when audiences lose interest in channel offererings, and isolate potential improvements in content delivery.
+
+
+#### Integrate Impact of Out-of-Game Events
+Football Manager players are playing a simulation of the real-world Football ecosystem. There may be scandals, events, competition rules changes, and so on, playing a role in what sorts of content are desired on the YouTube platform. The emergence of an exciting new footballing talent, a World Cup, clubs relegated due to financial mismanagement, are  events with high content creation potential. Collecting a stream of such events and overlaying the timeline of this data with YouTube engagement metrics may provide interesting insights as to what sorts of content viewers may have interest in.
+
 ---
 
 # Repository Structure
 * `data/`: Contains raw YouTube video data and spreadsheets.
 * `notebooks/`: Jupyter notebooks with all analysis and code.
 * `images/`: Visualization outputs used in this README.md.
+* `requirements.txt`: List of Python dependencies used in the [analysis notebook](./notebooks/Football_Manager_Content_on_Youtube.ipynb). 
 * `README.md`: This document.
