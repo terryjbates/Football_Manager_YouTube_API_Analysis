@@ -20,19 +20,19 @@ Analysis of Football Manager (FM) YouTube content to understand trends, high-per
 # Project Summary
 
 
-This project analyzes Football Manager-related YouTube content, identifying key content categories, patterns in viewership trends, and correlations between video performance and metadata. The analysis leverages the [YouTube Data API](https://developers.google.com/youtube/v3/docs/search/list) to provide insights for content creators and businesses targeting the Football Manager audience, showcasing the dynamics of high-performing content and its evolution over time.
+This project analyzes Football Manager-related YouTube content, identifying key content categories, patterns in viewership trends, and correlations between video performance and metadata. The analysis leverages the [YouTube Data API](https://developers.google.com/youtube/v3/docs/search/list) to deliver insights for content creators and businesses engaging with the Football Manager audience, showcasing the dynamics of high-performing content and its evolution over time.
 
 # Background
 
 ## The Football Manager Ecosystem
-[Football Manager](https://en.wikipedia.org/wiki/Football_Manager) (FM) is a highly immersive football management simulation game that puts players in control of every aspect of their team, from tactical decisions to financial management. Available on all major gaming platforms, FM has cultivated a passionate global community, with over **7 million players** engaging with the latest release, Football Manager 2024. Central to this ecosystem are content creators on platforms like [YouTube](https://www.youtube.com/) and [Twitch](https://www.twitch.tv/), who not only entertain but also provide critical gameplay strategies, detailed tutorials, and creative challenges. By analyzing these creators and their content, this project uncovers actionable insights for growing and sustaining engagement in this dynamic ecosystem.
+[Football Manager](https://en.wikipedia.org/wiki/Football_Manager) (FM) is a highly immersive football management simulation game that puts players in control of every aspect of their team, from tactical decisions to financial management. Available on all major gaming platforms, FM has cultivated a passionate global community, with over **7 million players** engaging with the latest release, Football Manager 2024. At the heart of this ecosystem are content creators on platforms like [YouTube](https://www.youtube.com/) and [Twitch](https://www.twitch.tv/), who entertain while offering gameplay strategies, in-depth tutorials, and innovative challenges. By analyzing these creators and their content, this project uncovers actionable insights for growing and sustaining engagement in this dynamic ecosystem.
 
 ## The YouTube Platform for Football Manager Content 
-[YouTube](https://www.youtube.com) serves not only as a hub for [Football Manager](https://en.wikipedia.org/wiki/Football_Manager) content, but also as a powerful marketing tool and search engine. For content creators, it offers a unique opportunity to engage with highly targeted audiences, build loyal communities, and generate sustainable revenue through ad monetization. Along with ad monetization, creators can leverage the YouTube platform to promote their brands on alternative platforms, such as [Patreon](https://www.patreon.com/) and [Twitch](https://www.twitch.tv/), directly sell their own merchandise, or earn brand sponsorship as well. 
+[YouTube](https://www.youtube.com) serves not only as a hub for [Football Manager](https://en.wikipedia.org/wiki/Football_Manager) content, but also as a powerful marketing tool and search engine. For content creators, YouTube provides a platform to engage targeted audiences, foster loyal communities, and generate sustainable revenue through ad monetization. In addition to ad monetization, creators can promote their brands on platforms like [Patreon](https://www.patreon.com/) and [Twitch](https://www.twitch.tv/), sell merchandise directly, or secure brand sponsorships.
 
 YouTube’s algorithm, designed to surface relevant content to users based on viewing habits, makes it easier for creators to break into niches like Football Manager. Unlike traditional [SEO](https://en.wikipedia.org/wiki/Search_engine_optimization) strategies that rely heavily on written content and webpage optimization, YouTube offers the advantage of video durability—content created years ago can continue to generate views and engagement, long after initial publication.
 
-This dynamic creates a highly competitive, yet accessible, space for creators of all sizes. Viewers use YouTube as a de facto search engine to find tutorials, gameplay strategies, and community-driven content. As a result, creators who understand how to optimize their video content can potentially gain significant visibility and reach. Furthermore, businesses targeting the Football Manager community can leverage YouTube’s ad platform to connect with a dedicated and engaged audience, fostering brand loyalty through authentic, creator-led partnerships.
+This dynamic fosters a competitive yet accessible environment for creators of all sizes. Viewers use YouTube as a de facto search engine to find tutorials, gameplay strategies, and community-driven content. As a result, creators who understand how to optimize their video content can potentially gain significant visibility and reach. Furthermore, businesses targeting the Football Manager community can leverage YouTube’s ad platform to connect with a dedicated and engaged audience, fostering brand loyalty through authentic, creator-led partnerships.
 
 For both creators and marketers, the insights from this project offer actionable strategies to capitalize on YouTube’s unique ecosystem. By identifying high-performing video categories and engagement patterns, this analysis provides a roadmap for content optimization and audience growth, ultimately reinforcing [YouTube](https://www.youtube.com)’s role as a cornerstone of the Football Manager content landscape.
 
@@ -44,7 +44,7 @@ Primary data sources:
 
 * Data was processed and stored in [DuckDB](https://duckdb.org/) for efficient querying and manipulation.
 
-* Key metrics were exported to CSV and analyzed in  [Microsoft Excel](https://microsoft.com/en-us/microsoft-365/excel) using Pivot Tables and area charts to categorize content and track trends.
+* Key metrics were exported to CSV and analyzed in  [Microsoft Excel](https://microsoft.com/en-us/microsoft-365/excel) using pivot tables and area charts for content categorization and trend tracking.
 
 # Analytical Techniques
 
@@ -54,7 +54,7 @@ To ensure data consistency, columns with inconsistent capitalization, special ch
 
 ## Categorization
 
-Videos were categorized based on their title and description. Word frequency analysis and clustering techniques helped reveal trends and associations in content. Categories include:
+Videos were categorized based on their title and description. Word frequency analysis and clustering techniques uncovered trends and associations in content. Categories include:
 
 * Challenges
 * Experiments
@@ -111,7 +111,7 @@ Video viewership patterns were analyzed over time, with specific attention to pe
 This section outlines the steps taken to collect, process, and analyze the data in this project. The methodology follows a structured approach, ensuring clarity, reproducibility, and alignment with data analysis best practices.
 
 ## 1. Define Project Objectives and Scope
-The goal of this project was to analyze Football Manager (FM) YouTube content, identify key engagement patterns, and explore content trends to uncover actionable insights for creators and analysts. Unless otherwise specified, project scope is focused on monetizable YouTube channels associated with Football Manager-related content with the largest amount of channel subscribers, collecting data for these cannels, extracting engagement metrics, and implementing content categorization.
+The goal of this project was to analyze Football Manager (FM) YouTube content, identify key engagement patterns, and explore content trends to uncover actionable insights for creators and analysts. Unless otherwise specified, the project focuses on monetizable YouTube channels with Football Manager-related content and the largest subscriber counts. Data for these channels was collected, engagement metrics extracted, and content categorization.
 
 ---
 
@@ -174,7 +174,7 @@ The goal of this project was to analyze Football Manager (FM) YouTube content, i
   - **575** YouTube channels are produce Football Manager content, with **46%** eligible for the [YouTube Partner Program Eligibility](https://support.google.com/youtube/answer/72851?hl=en&ref_topic=9153642&sjid=13407352636801244061-NC) based on subscriber count.
   - A total of **7.49M** YouTube subscribers to channels related to Football Manager were found.
   - The oldest channel found producing Football Manager content was created in February 2007 ([docks](https://www.youtube.com/@JonaDocks)), yet the oldest verifiable Football Manager content video in our dataset was created in January 2013 (["Genie Scout 13 Tutorial - Intro" ](https://www.youtube.com/watch?v=gEqBRTVV2M4) by [FM Scout](https://www.youtube.com/@fmscout) ).
-  - Subcriber distribution is highly skewed; small numbers of creators have significant subscriber amonuts, while larger numbers of creators have much smaller communities.
+  - Subscriber distribution is highly skewed: a small number of creators account for significant subscriber counts, while most creators have smaller communities.
     | channelTitle   |   subscriberCount |
     |:---------------|------------------:|
     | NickRTFM       |            879000 |
@@ -209,7 +209,7 @@ The goal of this project was to analyze Football Manager (FM) YouTube content, i
   - **81%** of languages spoken in Football Manager-related channels are European.
     ![English is Dominant Language](./images/spoken_languages.png)  
     - English (en) is the spoken language in **50%** of all channels. 
-    - Turkish (tr)is the second-most common language with **10.55%**. In third to sixth place:
+    - Turkish (tr) is the second-most common language with **10.55%**. In third to sixth place:
       - Spanish (es): **6.88%**
       - Portuguese (pt): **6.42%**
       - French (fr): **4.13%**
@@ -331,7 +331,7 @@ The goal of this project was to analyze Football Manager (FM) YouTube content, i
       | DoctorBenjy FM |        113000 |        30.0372 |
       | Arthur Ray     |         96800 |        27.5235 |
       | Seals 311      |         97600 |        17.1892 |
-      - The fastest growing channels are dominated by content creators that overlap with **FIFA/FC24** content creators and variety streamers with a large gaming catalogs. Using different content niches may expand a content creator's audience, growing their channels and attracting subscribers with  diverse appetites.
+      - The fastest-growing channels are dominated by creators who overlap with **FIFA/FC24** content and variety streamers with extensive gaming catalogs. Using different content niches may expand a content creator's audience, growing their channels and attracting subscribers with  diverse appetites.
     - **Most Efficient Videos**
       - We define "efficiency" as videos gaining the highest engagement metric per 1000 _views_ .
       - **LikeRatio**
@@ -389,7 +389,7 @@ The goal of this project was to analyze Football Manager (FM) YouTube content, i
 To further expand on the insights gained from this project and explore untapped areas of analysis, the following next steps are proposed:
 
 #### Machine Learning Classification
-This analysis relied on domain-specific knowledge, direct knowledge of individual content creator brand's and information, and personal judgement. An interesting exercise would be training a supervised machine learning model to programmatically assess if a YouTube video was a "Football Manager" video or not. Features would include title, description text, tags, even assessing the thumbnail imagery, and classify if a video is a "Football Manager" video or not. This would alleviate manual asessment and decrease the toil in data acquisition process.
+This analysis relied on domain-specific knowledge, creator branding insights, and personal judgment. An interesting exercise would be training a supervised machine learning model to programmatically assess if a YouTube video was a "Football Manager" video or not. Features would include title, description text, tags, even assessing the thumbnail imagery, and classify if a video is a "Football Manager" video or not. This would alleviate manual asessment and decrease the toil in data acquisition process.
 
 Clustering analysis techniques run against data for various Football Manager-related channels may uncover similar video content based on quantitative data instead of qualitative judgments made by analysts. Once similar videos are isolated, based upon categorization by content creator, it may be possible to discover overlapping sets of content types and user bases.  
 
@@ -400,7 +400,7 @@ Analyze the sentiment behind viewer comments to uncover responses and their corr
 Compare YouTube engagement metrics with other platforms like Twitch or TikTok to understand cross-platform audience overlaps and preferences. Explore if similar patterns of growth, content type, and seasonality, mirror or diverge as compared to the YouTube platform.
 
 #### Measure Viewer Retention and Drop-Off Points
-Viewer "churn" can _only_ be assessed by individual content creators, as that data is not made public in the YouTube Data API. If internal classification o content was possible, creators could investigate viewer retention rates across video categories, identify where an when audiences lose interest in channel offererings, and isolate potential improvements in content delivery.
+Viewer "churn" can _only_ be assessed by individual content creators, as that data is not made public in the YouTube Data API. If internal classification of content was possible, creators could investigate viewer retention rates across video categories, identify where an when audiences lose interest in channel offererings, and isolate potential improvements in content delivery.
 
 
 #### Integrate Impact of Out-of-Game Events
