@@ -13,7 +13,7 @@ Analysis of Football Manager (FM) YouTube content to understand trends, high-per
 * [Methodology](#methodology)
 * [Analysis Process](#analysis-process)
 * [Insights and Findings](#insights-and-findings)
-* [Next Steps](#next-steps)
+* [Next Steps](#7-next-steps)
 * [Repository Structure](#repository-structure)
 
 
