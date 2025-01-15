@@ -384,6 +384,7 @@ The goal of this project was to analyze Football Manager (FM) YouTube content, i
           | Kırmızı Kep    |        52.8207 | https://www.youtube.com/watch?v=hlxPGJwHGfw | 2015-02-18 07:52:07-08:00 |
 
 ---
+
 ## 7. Next Steps
 
 To further expand on the insights gained from this project and explore untapped areas of analysis, the following next steps are proposed:
