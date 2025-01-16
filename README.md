@@ -214,11 +214,13 @@ The goal of this project was to analyze Football Manager (FM) YouTube content, i
       - Portuguese (pt): **6.42%**
       - French (fr): **4.13%**
       - German (de): **3.21%**
-  - The non-European languages found in our dataset were:
-    - Indonesian
-    - Korean
-    - Arabic
-    - Japanese
+    - The non-European languages found in our dataset were:
+      - Indonesian
+      - Korean
+      - Arabic
+      - Japanese
+  - Of channels identifying the country of their creator, **32.82%** of are in **Great Britain**. **11.79%** are in **Turkey**. **Brazilian** channels make up **6.15%** of channels, explaining the presence of Portuguese in our language discussion. **Indonesia** has an equal number of channels as **Spain**, and outpaced **Spain**, **Germany**, and the **United States**. 
+    ![Channel Count by Country](./images/channel_count_by_country.png)
   - **77%** of monetizable channels producing Football Manager content have branding keywords present. For channels using branding keywords, the average number of is **18.93**. 
 
 - **Engagement Patterns**
