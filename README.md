@@ -13,8 +13,8 @@ Analysis of Football Manager (FM) YouTube content to understand trends, high-per
 * [Methodology](#methodology)
 * [Analysis Process](#analysis-process)
 * [Insights and Findings](#insights-and-findings)
-* [Visualizations](#visualizations)
-* [Next Steps](#next-steps)
+* [Visualizations](#7-visualizations)
+* [Next Steps](#8-next-steps)
 * [Repository Structure](#repository-structure)
 
 
@@ -415,6 +415,11 @@ Viewer "churn" can _only_ be assessed by individual content creators, as that da
 
 #### Integrate Impact of Out-of-Game Events
 Football Manager players are playing a simulation of the real-world Football ecosystem. There may be scandals, events, competition rules changes, and so on, playing a role in what sorts of content are desired on the YouTube platform. The emergence of an exciting new footballing talent, a World Cup, clubs relegated due to financial mismanagement, are  events with high content creation potential. Collecting a stream of such events and overlaying the timeline of this data with YouTube engagement metrics may provide interesting insights as to what sorts of content viewers may have interest in.
+
+
+#### Explore International Retail Data with YouTube Content Trends
+One of the more interesting discoveries gleaned from leveraging visual analytics was the lack of content creators in significant parts of the globe. Mexico, Central America, Africa, and central Asia had no content creators to be found. It is surprising that nations where Football is a predominate sport, that there is not more appetite to play games centered on Football Management simulation. While this may relate to a marketing dilemna, there may be structure underpinnings that explain the dearth of creators. Playing the game itself may require a specific set of computing software and hardware requirements that residents of these areas cannot match. Internet access, game retail costs, and lack of advertising may also explain this phenomena as well. As the YouTube Data API does not present demographic viewer information, it may be an exercise for content creators to analyze their channel statistics and observe if there is interest in the game via content consumption, if there are not significant amounts of creators and, potentially, players in these areas. 
+
 
 ---
 
