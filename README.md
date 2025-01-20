@@ -228,7 +228,7 @@ The goal of this project was to analyze Football Manager (FM) YouTube content, i
   - **Likes**
     - _Likes_ strongly correlate with views (r=**0.82**), indicating viewers generally like content they’ve watched.
     ![Likes vs. Views](./images/likes_vs_views.png)
-    - modest correlation between _likes_ and _comments_ (r=**0.67**). Commenters on a video would also need to view the video before investing effort to comment on a video
+    - A modest correlation between _likes_ and _comments_ (r=**0.67**). Commenters on a video would also need to view the video before investing effort to comment on a video
 
     ![Comments vs. Likes](./images/comments_vs_likes.png)
   - **Views**
