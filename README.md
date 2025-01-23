@@ -175,7 +175,7 @@ The goal of this project was to analyze Football Manager (FM) YouTube content, i
   - **575** YouTube channels are produce Football Manager content, with **46%** eligible for the [YouTube Partner Program Eligibility](https://support.google.com/youtube/answer/72851?hl=en&ref_topic=9153642&sjid=13407352636801244061-NC) based on subscriber count.
   - A total of **7.49M** YouTube subscribers to channels related to Football Manager were found.
   - The oldest channel found producing Football Manager content was created in February 2007 ([docks](https://www.youtube.com/@JonaDocks)), yet the oldest verifiable Football Manager content video in our dataset was created in January 2013 (["Genie Scout 13 Tutorial - Intro" ](https://www.youtube.com/watch?v=gEqBRTVV2M4) by [FM Scout](https://www.youtube.com/@fmscout) ).
-  - Subcriber distribution is highly skewed; small numbers of creators have significant subscriber amonuts, while larger numbers of creators have much smaller communities.
+  - Subscriber distribution is highly skewed; small numbers of creators have significant subscriber amonuts, while larger numbers of creators have much smaller communities.
     | channelTitle   |   subscriberCount |
     |:---------------|------------------:|
     | NickRTFM       |            879000 |
